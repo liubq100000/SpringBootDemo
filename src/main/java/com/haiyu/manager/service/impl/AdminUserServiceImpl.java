@@ -53,7 +53,7 @@ public class AdminUserServiceImpl implements AdminUserService{
 
     @Override
     public Map<String,Object> addUser(BaseAdminUser user) {
-        Map<String,Object> data = new HashMap();
+        Map<String,Object> data = new HashMap<>();
         try {
             BaseAdminUser old = baseAdminUserMapper.getUserByUserName(user.getSysUserName(),null);
             if(old != null){
@@ -100,7 +100,7 @@ public class AdminUserServiceImpl implements AdminUserService{
 
     @Override
     public Map <String, Object> updateUser(BaseAdminUser user) {
-        Map<String,Object> data = new HashMap();
+        Map<String,Object> data = new HashMap<>();
         Integer id = user.getId();
         BaseAdminUser old = baseAdminUserMapper.getUserByUserName(user.getSysUserName(),id);
         if(old != null){

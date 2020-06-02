@@ -115,7 +115,7 @@ public class PermissionController {
     @ResponseBody
     public Map<String,Object> setPermission(BaseAdminPermission permission) {
         logger.info("设置权限[新增或更新]！permission:" + permission);
-        Map<String,Object> data = new HashMap();
+        Map<String,Object> data = new HashMap<>();
         if(permission.getId() == null){
             //新增权限
             data = permissionService.addPermission(permission);

@@ -55,7 +55,7 @@ public class UserController {
     @ResponseBody
     public Map<String,Object> login(HttpServletRequest request, LoginDTO loginDTO, HttpSession session){
         logger.info("进行登陆");
-        Map<String,Object> data = new HashMap();
+        Map<String,Object> data = new HashMap<>();
         // 使用 shiro 进行登录
         Subject subject = SecurityUtils.getSubject();
 
@@ -116,7 +116,7 @@ public class UserController {
     @ResponseBody
     public Map<String,Object> setP(String pwd, String isPwd){
         logger.info("进行密码重置");
-        Map<String,Object> data = new HashMap();
+        Map<String,Object> data = new HashMap<>();
         if(!pwd.equals(isPwd)){
             data.put("code",0);
             data.put("message","两次输入的密码不一致!");
@@ -200,7 +200,7 @@ public class UserController {
     @ResponseBody
     public Map<String,Object> setUser(BaseAdminUser user) {
         logger.info("设置用户[新增或更新]！user:" + user);
-        Map<String,Object> data = new HashMap();
+        Map<String,Object> data = new HashMap<>();
         if(user.getId() == null){
             data = adminUserService.addUser(user);
         }else{

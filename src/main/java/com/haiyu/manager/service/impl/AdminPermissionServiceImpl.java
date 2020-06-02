@@ -44,7 +44,7 @@ public class AdminPermissionServiceImpl implements AdminPermissionService {
 
     @Override
     public Map<String, Object> addPermission(BaseAdminPermission permission) {
-        Map<String,Object> data = new HashMap();
+        Map<String,Object> data = new HashMap<>();
         try {
             permission.setCreateTime(DateUtils.getCurrentDate());
             permission.setUpdateTime(DateUtils.getCurrentDate());
@@ -69,7 +69,7 @@ public class AdminPermissionServiceImpl implements AdminPermissionService {
 
     @Override
     public Map <String, Object> updatePermission(BaseAdminPermission permission) {
-        Map<String,Object> data = new HashMap();
+        Map<String,Object> data = new HashMap<>();
         try{
             permission.setUpdateTime(DateUtils.getCurrentDate());
             int result = permissionMapper.updatePermission(permission);

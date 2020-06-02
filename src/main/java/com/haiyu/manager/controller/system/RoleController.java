@@ -101,7 +101,7 @@ public class RoleController {
     @ResponseBody
     public Map<String,Object> setRole(BaseAdminRole role) {
         logger.info("设置角色[新增或更新]！role:" + role);
-        Map<String,Object> data = new HashMap();
+        Map<String,Object> data = new HashMap<>();
         if(role.getId() == null){
             //新增角色
             data = adminRoleService.addRole(role);

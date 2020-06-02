@@ -78,7 +78,7 @@ public class AdminRoleServiceImpl implements AdminRoleService {
 
     @Override
     public Map<String,Object> addRole(BaseAdminRole role) {
-        Map<String,Object> data = new HashMap();
+        Map<String,Object> data = new HashMap<>();
         try {
             role.setCreateTime(DateUtils.getCurrentDate());
             role.setUpdateTime(DateUtils.getCurrentDate());
@@ -107,7 +107,7 @@ public class AdminRoleServiceImpl implements AdminRoleService {
 
     @Override
     public Map<String,Object> updateRole(BaseAdminRole role) {
-        Map<String,Object> data = new HashMap();
+        Map<String,Object> data = new HashMap<>();
         try{
             role.setUpdateTime(DateUtils.getCurrentDate());
             int result = baseAdminRoleMapper.updateRole(role);
