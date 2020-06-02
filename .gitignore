@@ -1,0 +1,11 @@
+/.idea
+/.settings
+/*.iml
+/target
+/overlays
+/src/main/resources/*.dat
+/src/main/resources/*.lic
+/.project
+/.classpath
+/.settings
+/.lic
