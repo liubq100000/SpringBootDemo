@@ -1,5 +1,6 @@
 /.idea
 /.settings
+/log
 /*.iml
 /target
 /overlays
