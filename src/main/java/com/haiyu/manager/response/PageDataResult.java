@@ -11,43 +11,79 @@ import java.util.List;
  */
 public class PageDataResult {
 
-    private Integer code=200;
+	private Integer code = 200;
 
-    //总记录数量
-    private Integer totals;
+	/**
+	 * 当前页码
+	 */
+	private int pageNum;
+	/**
+	 * 每页数量
+	 */
+	private int pageSize;
+	/**
+	 * 记录总数
+	 */
+	private long totalSize;
+	/**
+	 * 页码总数
+	 */
+	private int totalPages;
 
-    private List<?> list;
+	private List<?> list;
 
-    public Integer getCode() {
-        return code;
-    }
+	public Integer getCode() {
+		return code;
+	}
 
-    public void setCode(Integer code) {
-        this.code = code;
-    }
+	public void setCode(Integer code) {
+		this.code = code;
+	}
 
-    public Integer getTotals() {
-        return totals;
-    }
+	public List<?> getList() {
+		return list;
+	}
 
-    public void setTotals(Integer totals) {
-        this.totals = totals;
-    }
+	public void setList(List<?> list) {
+		this.list = list;
+	}
 
-    public List <?> getList() {
-        return list;
-    }
+	public int getPageNum() {
+		return pageNum;
+	}
 
-    public void setList(List <?> list) {
-        this.list = list;
-    }
+	public void setPageNum(int pageNum) {
+		this.pageNum = pageNum;
+	}
 
-    @Override
-    public String toString() {
-        return "PageDataResult{" +
-                "code=" + code +
-                ", totals=" + totals +
-                ", list=" + list +
-                '}';
-    }
+	public int getPageSize() {
+		return pageSize;
+	}
+
+	public void setPageSize(int pageSize) {
+		this.pageSize = pageSize;
+	}
+
+	public long getTotalSize() {
+		return totalSize;
+	}
+
+	public void setTotalSize(long totalSize) {
+		this.totalSize = totalSize;
+	}
+
+	public int getTotalPages() {
+		return totalPages;
+	}
+
+	public void setTotalPages(int totalPages) {
+		this.totalPages = totalPages;
+	}
+
+	@Override
+	public String toString() {
+		return "PageDataResult{" + "code=" + code + ", pageSize=" + pageSize + ", pageNum=" + pageNum + ", totalSize="
+				+ totalSize + ", totalPages=" + totalPages + '}';
+	}
+
 }

@@ -14,6 +14,7 @@ $(function() {
             url:'/permission/permissionList',
             method: 'post', //默认：get请求
             cellMinWidth: 80,
+            limit:3,
             page: true,
             request: {
                 pageName: 'pageNum', //页码的参数名称，默认：pageNum
@@ -22,7 +23,7 @@ $(function() {
             response:{
                 statusName: 'code', //数据状态的字段名称，默认：code
                 statusCode: 200, //成功的状态码，默认：0
-                countName: 'totals', //数据总数的字段名称，默认：count
+                countName: 'totalSize', //数据总数的字段名称，默认：count
                 dataName: 'list' //数据列表的字段名称，默认：data
             },
             cols: [[

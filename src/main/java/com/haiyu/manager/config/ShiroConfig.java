@@ -117,7 +117,11 @@ public class ShiroConfig {
         manager.setSessionManager(sessionManager());
         //注入Cookie记住我管理器
         manager.setRememberMeManager(rememberMeManager());
-
+        //https://blog.csdn.net/zhangxing52077/article/details/73477038
+        //授权轮询方式
+//        manager.setAuthorizer(authorizer);
+        //认证
+//        manager.setAuthenticator(authenticator);
         return manager;
     }
 
@@ -251,6 +255,8 @@ public class ShiroConfig {
     public EnterpriseCacheSessionDAO enterCacheSessionDAO() {
         EnterpriseCacheSessionDAO enterCacheSessionDAO = new EnterpriseCacheSessionDAO();
         enterCacheSessionDAO.setActiveSessionsCacheName("shiro-activeSessionCache");
+        //产生id
+//        enterCacheSessionDAO.setSessionIdGenerator(sessionIdGenerator);
         return enterCacheSessionDAO;
     }
 
