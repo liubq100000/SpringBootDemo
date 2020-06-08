@@ -23,8 +23,7 @@ spring:
 
 mybatis:
     mapper-locations: classpath:mapper/*.xml
-    configuration:
-      log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    
 #设置静态资源路径，多个以逗号分隔
 spring.resources.static-locations: classpath:static/,file:static/
 # pagehelper   
