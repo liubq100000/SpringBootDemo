@@ -4,7 +4,7 @@ server:
 
 spring:
   application:
-      name: haiyu
+      name: xydemo
   datasource:
     druid:
       url: jdbc:mysql://192.168.0.107:3308/mycenter?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&useSSL=false&serverTimezone=Asia/Shanghai&rewriteBatchedStatements=true&nullCatalogMeansCurrent=true

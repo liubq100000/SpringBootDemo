@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.haiyu.manager.dao.BaseAdminRoleMapper">
-  <resultMap id="BaseResultMap" type="com.haiyu.manager.pojo.BaseAdminRole">
+<mapper namespace="com.xy.center.management.dao.BaseAdminRoleMapper">
+  <resultMap id="BaseResultMap" type="com.xy.center.management.pojo.BaseAdminRole">
     <!--
       WARNING - @mbg.generated
     -->

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.haiyu.manager.dao.BaseAdminUserMapper">
-  <resultMap id="BaseResultMap" type="com.haiyu.manager.pojo.BaseAdminUser">
+<mapper namespace="com.xy.center.management.dao.BaseAdminUserMapper">
+  <resultMap id="BaseResultMap" type="com.xy.center.management.pojo.BaseAdminUser">
     <!--
       WARNING - @mbg.generated
     -->
@@ -69,7 +69,7 @@
     and user_status = 1
   </select>
 
-  <select id="getUserList" resultType="com.haiyu.manager.dto.AdminUserDTO">
+  <select id="getUserList" resultType="com.xy.center.management.dto.AdminUserDTO">
     SELECT id, sys_user_name AS sysUserName ,role_id AS roleId,
     (SELECT role_name FROM base_admin_role as r WHERE r.id = u.role_id) as roleName,
     user_phone AS userPhone,reg_time AS regTime,user_status AS userStatus
