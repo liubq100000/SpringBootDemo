@@ -7,9 +7,9 @@ spring:
       name: haiyu
   datasource:
     druid:
-      url: jdbc:mysql://192.168.210.100:3306/mysys?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&useSSL=false&serverTimezone=Asia/Shanghai&rewriteBatchedStatements=true&nullCatalogMeansCurrent=true
+      url: jdbc:mysql://192.168.0.107:3308/mycenter?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&useSSL=false&serverTimezone=Asia/Shanghai&rewriteBatchedStatements=true&nullCatalogMeansCurrent=true
       username: root
-      password: admin123
+      password: root
       initial-size: 1
       min-idle: 1
       max-active: 20
