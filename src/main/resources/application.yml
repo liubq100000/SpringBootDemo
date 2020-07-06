@@ -7,14 +7,24 @@ spring:
       name: xydemo
   datasource:
     druid:
-      url: jdbc:mysql://192.168.0.107:3308/mycenter?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&useSSL=false&serverTimezone=Asia/Shanghai&rewriteBatchedStatements=true&nullCatalogMeansCurrent=true
-      username: root
-      password: root
-      initial-size: 1
-      min-idle: 1
-      max-active: 20
-      test-on-borrow: true
-      driver-class-name: com.mysql.jdbc.Driver
+      center:
+        jdbcUrl: jdbc:mysql://192.168.0.107:3308/mycenter?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&useSSL=false&serverTimezone=Asia/Shanghai&rewriteBatchedStatements=true&nullCatalogMeansCurrent=true
+        username: root
+        password: root
+        initial-size: 1
+        min-idle: 1
+        max-active: 20
+        test-on-borrow: true
+        driverClassName: com.mysql.jdbc.Driver
+      system:
+        jdbcUrl: jdbc:mysql://192.168.0.107:3308/mysys?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&useSSL=false&serverTimezone=Asia/Shanghai&rewriteBatchedStatements=true&nullCatalogMeansCurrent=true
+        username: root
+        password: root
+        initial-size: 1
+        min-idle: 1
+        max-active: 20
+        test-on-borrow: true
+        driverClassName: com.mysql.jdbc.Driver
 #  thymeleaf:
 #      cache: false
 #      mode: HTML5

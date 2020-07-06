@@ -9,6 +9,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
 import com.github.pagehelper.PageHelper;
@@ -31,6 +32,7 @@ import com.xy.center.management.service.AdminPermissionService;
  * @date: 2018/11/30 9:44
  */
 @Service
+@Primary
 public class AdminPermissionServiceImpl implements AdminPermissionService {
 
 	private Logger logger = LoggerFactory.getLogger(this.getClass());

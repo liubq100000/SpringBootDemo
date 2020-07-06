@@ -9,6 +9,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
@@ -31,6 +32,7 @@ import com.xy.center.management.service.AdminRoleService;
  * @date: 2018/11/21 14:26
  */
 @Service
+@Primary
 public class AdminRoleServiceImpl implements AdminRoleService {
 
 	private Logger logger = LoggerFactory.getLogger(this.getClass());
